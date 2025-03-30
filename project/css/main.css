@@ -5034,8 +5034,9 @@ template {
   .col-lg-3 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
+    flex: 0 0 37%;
     max-width: 25%;
+    width: 460px;
   }
 
   .col-lg-4 {
@@ -12034,7 +12035,7 @@ footer select.form-control {
 }
 
 footer .footer__top {
-  padding: 40px 0;
+  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12072,7 +12073,7 @@ footer .footer__bottom:after {
 footer .footer__bottom--content {
   text-align: center;
   color: #fff;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 14px;
 }
 
@@ -12189,7 +12190,15 @@ footer.fixed-btn-top .btn-to-top {
   }
 
   .footer__bottom--content {
-    float: right;
+    /* float: right; */
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#032852),
+      color-stop(73.22%, #021122),
+      to(#010810)
+    );
     padding: 20px 10%;
   }
 }
@@ -14767,6 +14776,8 @@ main .sfContentBlock h6 {
     width: 90%;
     margin: -20px auto;
     max-width: none;
+    /* Nao tem no original */
+    width: 350px;
   }
 
   .listing-card--style3 .img {
@@ -15441,4 +15452,18 @@ main .sfContentBlock h6 {
   color: #fff;
   font: normal 11px/1 arial, sans-serif;
   z-index: 1;
+}
+
+.logo-footer {
+  font-weight: bold;
+}
+
+.footer-items-center {
+  width: fit-content;
+}
+
+.footer-align-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
