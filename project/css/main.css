@@ -4166,6 +4166,17 @@ template {
   margin-left: auto;
 }
 
+.row-representative-acievements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5044,6 +5055,13 @@ template {
     -ms-flex: 0 0 33.33333%;
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
+  }
+
+  .col-lg-4_representative-acievements {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: none;
   }
 
   .col-lg-5 {
@@ -10664,11 +10682,24 @@ header {
 
 header .site-logo {
   height: 50px;
-  display: block;
+  /* display: block; */
+  font-weight: 700;
+  color: white;
+  display: flex;
+  align-items: center;
 }
 
-header .site-logo img {
-  height: 100%;
+.logo-site-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+}
+
+.logo-site-divider {
+  border-left: 2px solid white;
+  height: 35px; /* altura da barra vertical */
 }
 
 header .container {
@@ -15466,4 +15497,29 @@ main .sfContentBlock h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.follow-me-title-footer {
+  text-align: center;
+}
+
+.follow-me-links {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.follow-me-links-footer {
+  width: 24px;
+  height: 24px;
+  border-radius: 30px;
+}
+
+.logo-footer-width {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 37%;
+  max-width: none;
+  /* width: 600px; */
+  width: 782px;
 }
