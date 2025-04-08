@@ -10664,11 +10664,24 @@ header {
 
 header .site-logo {
   height: 50px;
-  display: block;
+  /* display: block; */
+  font-weight: 700;
+  color: white;
+  display: flex;
+  align-items: center;
 }
 
-header .site-logo img {
-  height: 100%;
+.logo-site-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+}
+
+.logo-site-divider {
+  border-left: 2px solid white;
+  height: 35px; /* altura da barra vertical */
 }
 
 header .container {
@@ -15482,4 +15495,13 @@ main .sfContentBlock h6 {
   width: 24px;
   height: 24px;
   border-radius: 30px;
+}
+
+.logo-footer-width {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 37%;
+  max-width: none;
+  /* width: 600px; */
+  width: 782px;
 }
