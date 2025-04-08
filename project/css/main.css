@@ -4166,6 +4166,17 @@ template {
   margin-left: auto;
 }
 
+.row-representative-acievements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5044,6 +5055,13 @@ template {
     -ms-flex: 0 0 33.33333%;
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
+  }
+
+  .col-lg-4_representative-acievements {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: none;
   }
 
   .col-lg-5 {
