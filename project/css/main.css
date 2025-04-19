@@ -10520,7 +10520,7 @@ html {
 
 a {
   /* color: #e2a856; */
-  color: #c55876;
+  color: #ffff66;
 }
 
 a,
@@ -10535,13 +10535,13 @@ a:hover {
 
 a.alt:hover {
   /* color: #e2a856; */
-  color: #c55876;
+  color: #ffff66;
 }
 
 a.readmore {
   text-transform: uppercase;
   /* border-bottom: 1px solid #e2a856; */
-  border-bottom: 1px solid #c55876;
+  border-bottom: 1px solid #ffff66;
   font-family: Myriad Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol;
@@ -10854,7 +10854,7 @@ header .hamburger-menu.open span:nth-child(3) span:last-child {
 
 .header__navigation.bls-dropdown__menu li.active > a {
   /* color: #e2a856; */
-  color: #c55876;
+  color: #ffff66;
 }
 
 .header__navigation ul {
@@ -10912,7 +10912,7 @@ header .hamburger-menu.open span:nth-child(3) span:last-child {
 .header__navigation .nav-main__first--li.open,
 .header__navigation .nav-main__first--li.open > a {
   /* color: #e2a856; */
-  color: #c55876;
+  color: #ffff66;
 }
 
 .header__navigation .nav-main__first--li.open .nav-main__second--item {
@@ -11103,7 +11103,7 @@ header .hamburger-menu.open span:nth-child(3) span:last-child {
 
   .header__navigation a:hover {
     /* color: #e2a856; */
-    color: #c55876;
+    color: #ffff66;
   }
 
   .header__navigation .nav-main {
@@ -11123,9 +11123,9 @@ header .hamburger-menu.open span:nth-child(3) span:last-child {
   .header__navigation .nav-main .btn-gift {
     background: none;
     /* border: 1px solid #e2a856; */
-    border: 1px solid #c55876;
+    border: 1px solid #ffff66;
     /* color: #e2a856; */
-    color: #c55876;
+    color: #ffff66;
     border-radius: 30px;
     padding: 11px 20px;
     text-transform: uppercase;
@@ -11133,7 +11133,7 @@ header .hamburger-menu.open span:nth-child(3) span:last-child {
 
   .header__navigation .nav-main .btn-gift:hover {
     /* background: #e2a856; */
-    background: #c55876;
+    background: #ffff66;
     border: 1px solid #fff;
     color: #fff;
   }
@@ -11436,7 +11436,7 @@ body.freeze {
 
 .cookie-policy .readmore {
   /* color: #e2a856; */
-  color: #c55876;
+  color: #ffff66;
 }
 
 @media screen and (max-width: 991px) {
@@ -11676,9 +11676,9 @@ textarea.error {
 
 .radio input:checked + span {
   /* background: #e2a856; */
-  background: #c55876;
+  background: #ffff66;
   /* border-color: #e2a856; */
-  border-color: #c55876;
+  border-color: #ffff66;
 }
 
 .radio input:checked + span:after {
@@ -11727,9 +11727,9 @@ textarea.error {
 
 .checkbox input:checked + span {
   /* background: #e2a856; */
-  background: #c55876;
+  background: #ffff66;
   /* border-color: #e2a856; */
-  border-color: #c55876;
+  border-color: #ffff66;
 }
 
 .checkbox input:checked + span:before {
@@ -11829,7 +11829,7 @@ textarea.error {
 .bls-select .bls-dropdown__menu .menu-item.selected,
 .bls-select .bls-dropdown__menu .menu-item:hover {
   /* color: #e2a856; */
-  color: #c55876;
+  color: #ffff66;
 }
 
 .bls-select .bls-dropdown__menu .checkbox {
@@ -11847,7 +11847,7 @@ textarea.error {
 
 .bls-select.style-2 .btn {
   background: #2e2e2e;
-  color: ##c55876;
+  color: #ffff66;
 }
 
 .bls-select.style-2 .btn.open {
@@ -11875,7 +11875,7 @@ textarea.error {
 .bls-select.style-2 .bls-dropdown__menu .menu-item.checked,
 .bls-select.style-2 .bls-dropdown__menu .menu-item.selected,
 .bls-select.style-2 .bls-dropdown__menu .menu-item:hover {
-  color: ##c55876;
+  color: ##ffff66;
 }
 
 .btn-default,
@@ -11888,8 +11888,8 @@ input[type="submit"] {
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol;
   background: none;
-  border: 1px solid #c55876;
-  color: #c55876;
+  border: 1px solid #ffff66;
+  color: #ffff66;
   border-radius: 22px;
   padding: 11px 20px;
   text-transform: uppercase;
@@ -11905,7 +11905,7 @@ input[type="reset"]:active,
 input[type="reset"]:hover,
 input[type="submit"]:active,
 input[type="submit"]:hover {
-  background: #c55876;
+  background: #ffff66;
   border: 1px solid #fff;
   color: #fff;
 }
@@ -11945,8 +11945,8 @@ button.btn.disabled {
 .btn.btn-primary,
 button.btn-primary {
   background: none;
-  border: 1px solid #c55876;
-  color: #c55876;
+  border: 1px solid #ffff66;
+  color: #ffff66;
   border-radius: 22px;
   padding: 11px 20px;
   text-transform: uppercase;
@@ -11958,9 +11958,10 @@ button.btn-primary {
 button.btn-primary:active,
 button.btn-primary:hover,
 button.btn-secondary {
-  background: #c55876;
+  background: #ffff66;
   border: 1px solid #fff;
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
 }
 
 .btn.btn-secondary,
@@ -11975,8 +11976,8 @@ button.btn-secondary {
 button.btn-secondary:active,
 button.btn-secondary:hover {
   background: #fff;
-  border-color: #c55876;
-  color: #c55876;
+  border-color: #ffff66;
+  color: #ffff66;
 }
 
 .btn.btn-to-top,
@@ -11987,7 +11988,7 @@ button.btn-to-top {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #c55876;
+  background-color: #ffff66;
   color: #fff;
   border-color: #fff;
   z-index: 100;
@@ -12001,15 +12002,15 @@ button.btn-to-top {
 button.btn-to-top:active,
 button.btn-to-top:hover {
   background: #fff;
-  border-color: #c55876;
-  color: #c55876;
+  border-color: #ffff66;
+  color: #ffff66;
 }
 
 .btn.btn-to-top:active:before,
 .btn.btn-to-top:hover:before,
 button.btn-to-top:active:before,
 button.btn-to-top:hover:before {
-  border-color: #c55876;
+  border-color: #ffff66;
 }
 
 .btn.btn-to-top:before,
@@ -12080,7 +12081,7 @@ footer a {
 
 footer a:hover {
   text-decoration: none;
-  color: #c55876;
+  color: #ffff66;
 }
 
 footer ul {
@@ -12111,7 +12112,7 @@ footer .footer__bottom {
 }
 
 footer .footer__bottom:before {
-  /* background: #c55876; */
+  /* background: #ffff66; */
   background: #a9302e;
   left: 0;
 }
@@ -12355,7 +12356,7 @@ input::-ms-clear {
 .pagination a {
   font-size: 14px;
   font-weight: 700;
-  color: #c55876;
+  color: #ffff66;
   margin: 0 10px;
   text-decoration: none;
   height: 40px;
@@ -12384,7 +12385,7 @@ input::-ms-clear {
 .pagination .prev-page.page:before {
   content: "";
   display: block;
-  border: solid #c55876;
+  border: solid #ffff66;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 5px;
@@ -12430,7 +12431,7 @@ input::-ms-clear {
   right: 0;
   margin: 0 auto;
   border: 8px solid #fff;
-  border-top: 6px solid #c55876;
+  border-top: 6px solid #ffff66;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -12683,7 +12684,7 @@ input::-ms-clear {
 }
 
 .banner-content-header .banner-info a:hover {
-  color: #c55876;
+  color: #ffff66;
   text-decoration: none;
 }
 
@@ -13206,7 +13207,7 @@ input::-ms-clear {
 }
 
 .blog-detail__title {
-  color: #c55876;
+  color: #ffff66;
   margin-bottom: 15px;
 }
 
@@ -13430,7 +13431,7 @@ input::-ms-clear {
 }
 
 .eos-staff-profile .profile-info__connect .rounded-circle {
-  background: #c55876;
+  background: #ffff66;
   border: 1px solid #fff;
   width: 50px;
   height: 50px;
@@ -13444,8 +13445,8 @@ input::-ms-clear {
 .eos-staff-profile .profile-info__connect .rounded-circle:hover {
   text-decoration: none;
   background: #fff;
-  border-color: #c55876;
-  color: #c55876;
+  border-color: #ffff66;
+  color: #ffff66;
 }
 
 .eos-staff-profile .profile-info__connect .rounded-circle .fa {
@@ -13544,7 +13545,7 @@ input::-ms-clear {
   display: inline-block;
   margin-right: 15px;
   padding: 0 0 5px;
-  border-bottom: 1px solid #c55876;
+  border-bottom: 1px solid #ffff66;
 }
 
 .eos-staff-profile .profile-links a:hover {
@@ -13575,7 +13576,7 @@ input::-ms-clear {
 }
 
 .eos-staff-profile .publication-item .title {
-  color: #c55876;
+  color: #ffff66;
   font-family: Myriad Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol;
@@ -13656,7 +13657,7 @@ input::-ms-clear {
 }
 
 .desktop .research-detail .research-detail__sidebar a:hover {
-  color: #c55876;
+  color: #ffff66;
   text-decoration: none;
 }
 
@@ -13679,7 +13680,7 @@ input::-ms-clear {
 }
 
 .research-detail .research-detail__sidebar a.active {
-  color: #c55876;
+  color: #ffff66;
   text-decoration: none;
 }
 
@@ -13894,7 +13895,7 @@ input::-ms-clear {
 }
 
 .research-detail .the-team__item a:hover {
-  color: #c55876;
+  color: #ffff66;
   text-decoration: none;
 }
 
@@ -13968,7 +13969,7 @@ input::-ms-clear {
   position: absolute;
   width: 60px;
   height: 60px;
-  background: #c55876;
+  background: #ffff66;
   border-radius: 50%;
   border: 2px solid #fff;
   color: #fff;
@@ -14003,12 +14004,12 @@ input::-ms-clear {
 
 .btn-play:hover {
   text-decoration: none;
-  border-color: #c55876;
+  border-color: #ffff66;
   background: #fff;
 }
 
 .btn-play:hover .fa path {
-  fill: #c55876;
+  fill: #ffff66;
 }
 
 .bls-modal__video {
@@ -14279,7 +14280,7 @@ main .sfContentBlock h6 {
 
 .eos-widget .search-form .bls-filter .btn.open,
 .eos-widget .search-form .bls-filter .fa {
-  color: #c55876;
+  color: #ffff66;
 }
 
 .search-result-item {
@@ -14676,7 +14677,7 @@ main .sfContentBlock h6 {
 }
 
 .listing-content--style2 .listing-content__item .title {
-  color: #c55876;
+  color: #ffff66;
   font-family: Myriad Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol;
@@ -15048,7 +15049,7 @@ main .sfContentBlock h6 {
 }
 
 .publication-detail-page .download-row .rounded-circle {
-  background: #c55876;
+  background: #ffff66;
   border: 1px solid #fff;
   width: 50px;
   height: 50px;
@@ -15065,8 +15066,8 @@ main .sfContentBlock h6 {
 .publication-detail-page .download-row .rounded-circle:hover {
   text-decoration: none;
   background: #fff;
-  border-color: #c55876;
-  color: #c55876;
+  border-color: #ffff66;
+  color: #ffff66;
 }
 
 .publication-detail-page .download-row .rounded-circle .fa {
