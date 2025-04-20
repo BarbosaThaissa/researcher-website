@@ -4126,7 +4126,8 @@ template {
   display: none !important;
 }
 
-.container {
+.container,
+.header-container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -4134,20 +4135,63 @@ template {
   margin-left: auto;
 }
 
+/* Para colocar cor de fundo do header */
+.header-left-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 0;
+}
+
+.header-right-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #014240;
+  z-index: 0;
+}
+/* Para colocar cor de fundo do header */
+
+.logo-imagem {
+  overflow: hidden; /* Impede que o conteúdo ultrapasse os limites do container */
+  max-width: 100%; /* Ou qualquer largura específica */
+}
+
+.logo-image-perfil {
+  max-width: 100%;
+  width: 60px;
+  border-radius: 30px;
+  object-fit: contain;
+}
+
+.header-top,
+.header-bottom {
+  position: relative;
+  z-index: 1;
+}
+
 @media (min-width: 576px) {
-  .container {
+  .container,
+  .header-container {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .container {
+  .container,
+  .header-container {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .container {
+  .container,
+  .header-container {
     max-width: 960px;
   }
 }
@@ -4156,7 +4200,15 @@ template {
   .container {
     max-width: 1140px;
   }
+
+  .header-container {
+    max-width: 1700px;
+  }
 }
+
+/* .header-container {
+  max-width: none;
+} */
 
 .container-fluid {
   width: 100%;
@@ -10692,6 +10744,7 @@ header .site-logo {
   color: white;
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .logo-site-info {
@@ -10702,13 +10755,64 @@ header .site-logo {
   text-transform: uppercase;
 }
 
-.logo-site-divider {
-  border-left: 2px solid white;
-  height: 35px; /* altura da barra vertical */
+.logo-texts-align {
+  display: flex;
+  flex-direction: column;
 }
 
-header .container {
-  padding: 10px 15px;
+.title-logo {
+  font-size: 1.8rem;
+  line-height: 120%;
+}
+
+.logo-name {
+  color: #990000; /* vermelho logo */
+}
+
+.logo-area {
+  color: #000;
+}
+
+.subtitle-logo {
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: #000;
+  font-weight: 500;
+}
+
+.logo-site-divider {
+  border-left: 2px solid #000; /* cor da barra vertical */
+  height: 22px; /* altura da barra vertical */
+}
+
+.logo-site-info-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+}
+
+.title-logo-footer {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 120%;
+}
+
+.subtitle-logo-footer {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 120%;
+  font-weight: 500;
+}
+
+.logo-site-divider-footer {
+  border-left: 2px solid #fff; /* cor da barra vertical */
+  height: 22px; /* altura da barra vertical */
+}
+
+header .header-container {
+  padding: 20px 20px;
 }
 
 header .header-wrapper {
@@ -15620,5 +15724,5 @@ a.readmore,
   flex: 0 0 37%;
   max-width: none;
   /* width: 600px; */
-  width: 782px;
+  width: 795px;
 }
