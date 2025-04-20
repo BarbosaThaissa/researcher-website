@@ -12594,15 +12594,18 @@ input::-ms-clear {
    to(#171717) to(#014240)
   ); */
   /* background: linear-gradient(transparent, #171717); */
-  background: linear-gradient(transparent, #014240);
+  /* Efieton de transicao da parte de welcome */
+  /* background: linear-gradient(transparent, #014240); */
 }
 
 .homepage-card-banner .container {
   position: absolute;
   /* bottom: 0; */
-  bottom: 270px;
+  /* bottom: 270px; */
+  bottom: 330px;
   /* left: 50%; */
-  left: 27%;
+  /* left: 27%; */
+  left: 35%;
   -webkit-transform: translate3d(-50%, 0, 0);
   transform: translate3d(-50%, 0, 0);
   min-height: 50%;
@@ -12625,11 +12628,15 @@ input::-ms-clear {
 .homepage-card-banner-text {
   color: #fff;
   text-align: center;
-  padding-top: 60px;
+  /* padding-top: 60px; */
+  padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  /* padding-bottom: 40px; */
+  padding-bottom: 30px;
   /* max-width: 680px; */
-  max-width: 860px;
+  /* max-width: 860px; */
+  max-width: 1300px;
   /* max-width: fit-content; */
   margin: 0 auto;
   height: 100%;
@@ -12643,7 +12650,7 @@ input::-ms-clear {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-bottom: 75px;
+  /* padding-bottom: 75px; */
   /* visibility: hidden; */
   background-color: #014240;
   border-radius: 5px;
@@ -12670,8 +12677,8 @@ input::-ms-clear {
 }
 
 .homepage-card-banner-text .banner-description {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 1.7rem;
+  line-height: 120%;
   padding-bottom: 20px;
   /* color: #bcbcbcda; */
   color: #fff;
@@ -12680,6 +12687,11 @@ input::-ms-clear {
 
 .homepage-card-banner-text h1 {
   text-align: start;
+  font-size: 2.5rem;
+}
+
+.homepage-card-banner-text a {
+  font-size: 1.2rem;
 }
 
 .homepage-card-banner .arrow {
@@ -12850,11 +12862,12 @@ input::-ms-clear {
 @media screen and (min-width: 992px) {
   .homepage-card-banner .container {
     /* height: 50%; */
-    height: 57%;
+    /* height: 57%; */
+    max-width: 1300px;
   }
 
   .homepage-card-banner-text {
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
   }
 
   .homepage-card-banner .arrow {
@@ -15727,7 +15740,6 @@ main .sfContentBlock h6 {
   line-height: 120%;
 }
 
-.homepage-card-banner-text .banner-description,
 .descriptions-big {
   font-size: 2rem;
   line-height: 120%;
