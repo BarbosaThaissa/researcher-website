@@ -4157,9 +4157,16 @@ template {
 }
 /* Para colocar cor de fundo do header */
 
+.logo-imagem {
+  overflow: hidden; /* Impede que o conteúdo ultrapasse os limites do container */
+  max-width: 100%; /* Ou qualquer largura específica */
+}
+
 .logo-image-perfil {
+  max-width: 100%;
   width: 60px;
   border-radius: 30px;
+  object-fit: contain;
 }
 
 .header-top,
@@ -10778,6 +10785,32 @@ header .site-logo {
   height: 22px; /* altura da barra vertical */
 }
 
+.logo-site-info-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+}
+
+.title-logo-footer {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 120%;
+}
+
+.subtitle-logo-footer {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 120%;
+  font-weight: 500;
+}
+
+.logo-site-divider-footer {
+  border-left: 2px solid #fff; /* cor da barra vertical */
+  height: 22px; /* altura da barra vertical */
+}
+
 header .header-container {
   padding: 20px 20px;
 }
@@ -15691,5 +15724,5 @@ a.readmore,
   flex: 0 0 37%;
   max-width: none;
   /* width: 600px; */
-  width: 782px;
+  width: 795px;
 }
