@@ -4204,6 +4204,10 @@ template {
   .header-container {
     max-width: 1700px;
   }
+
+  .about-me-container {
+    max-width: 1600px;
+  }
 }
 
 /* .header-container {
@@ -12670,7 +12674,12 @@ input::-ms-clear {
   line-height: 20px;
   padding-bottom: 20px;
   /* color: #bcbcbcda; */
-  color: #eeeeee;
+  color: #fff;
+  text-align: start;
+}
+
+.homepage-card-banner-text h1 {
+  text-align: start;
 }
 
 .homepage-card-banner .arrow {
@@ -13267,6 +13276,10 @@ input::-ms-clear {
   border-radius: 6px;
 }
 
+.height-img img {
+  height: 100px;
+}
+
 .research-area__desc {
   margin-top: 20px;
 }
@@ -13282,7 +13295,7 @@ input::-ms-clear {
 }
 
 .research-area__desc .description {
-  color: #bcbcbc;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -14739,8 +14752,14 @@ main .sfContentBlock h6 {
   text-decoration: none;
 }
 
+.listing-card--style4 .desc .title-big {
+  font-size: 3.5rem;
+  line-height: 120%;
+}
+
 .listing-card--style4 .desc .description {
-  color: #bcbcbc;
+  /* color: #bcbcbc; */
+  color: #fff;
   text-decoration: none;
 }
 
@@ -15043,8 +15062,20 @@ main .sfContentBlock h6 {
     height: 309px;
   }
 
+  .listing-card--style4 .img-about-height-biography {
+    height: 382px;
+  }
+
+  .listing-card--style4 .img-about-height-interests {
+    height: 382px;
+  }
+
+  .listing-card--style4 .img-about-height-experience {
+    height: 450px;
+  }
+
   .listing-card--style4 .img-biography {
-    height: 700px;
+    height: 1230px;
   }
 
   .listing-card--style4 .img img {
@@ -15065,7 +15096,8 @@ main .sfContentBlock h6 {
     -ms-flex-line-pack: center;
     align-content: center;
     padding: 30px;
-    width: calc(45% - 25px);
+    /* width: calc(45% - 25px); */
+    width: calc(90% - 25px);
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-top-right-radius: 6px;
@@ -15687,6 +15719,16 @@ main .sfContentBlock h6 {
 .homepage-card-banner-text .banner-description,
 .descriptions-big {
   font-size: 2rem;
+  line-height: 120%;
+}
+
+.descriptions-biografy-big {
+  font-size: 1.5rem;
+  line-height: 120%;
+}
+
+.descriptions-about-me-setions-big {
+  font-size: 1.8rem;
   line-height: 120%;
 }
 
