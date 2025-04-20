@@ -12910,6 +12910,27 @@ input::-ms-clear {
   text-align: center;
 }
 
+.contact-me-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contact-me-section a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 120%;
+}
+
+.contact-me-section a:hover {
+  color: #ffff66;
+}
+
 @media screen and (min-width: 768px) {
   .follow-us .follow-us__logos a {
     width: auto;
