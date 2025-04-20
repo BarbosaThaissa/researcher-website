@@ -14647,6 +14647,12 @@ main .sfContentBlock h6 {
   font-size: 18px;
 }
 
+.listing-card--style2 .card-item .desc .subtitle-big,
+.listing-card--style3 .card-item .desc .subtitle-big {
+  font-size: 2rem;
+  line-height: 120%;
+}
+
 .listing-card--style2 .card-item .desc .title a,
 .listing-card--style3 .card-item .desc .title a {
   color: #fff;
@@ -15707,6 +15713,11 @@ main .sfContentBlock h6 {
 }
 
 .title-big {
+  font-size: 3.5rem;
+  line-height: 120%;
+}
+
+.banner-landing .banner-title {
   font-size: 3.5rem;
   line-height: 120%;
 }
