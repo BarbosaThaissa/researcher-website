@@ -12614,7 +12614,7 @@ input::-ms-clear {
   /* left: 50%; */
   /* left: 27%; */
   left: 35%;
-  left: 70%;
+  left: 64%;
   -webkit-transform: translate3d(-50%, 0, 0);
   transform: translate3d(-50%, 0, 0);
   min-height: 50%;
@@ -12645,7 +12645,7 @@ input::-ms-clear {
   padding-bottom: 30px;
   /* max-width: 680px; */
   /* max-width: 860px; */
-  max-width: 1300px;
+  /* max-width: 1300px; */
   /* max-width: fit-content; */
   margin: 0 auto;
   height: 100%;
@@ -12873,7 +12873,8 @@ input::-ms-clear {
   .homepage-card-banner .container {
     /* height: 50%; */
     /* height: 57%; */
-    max-width: 1300px;
+    /* max-width: 1300px; */
+    max-width: 1440px;
   }
 
   .homepage-card-banner-text {
