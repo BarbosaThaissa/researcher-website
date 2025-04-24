@@ -12742,6 +12742,7 @@ input::-ms-clear {
   position: relative;
   color: #fff;
   z-index: 1;
+  text-transform: uppercase;
   text-align: center;
   font-family: Myriad Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
