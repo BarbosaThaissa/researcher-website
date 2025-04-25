@@ -11459,7 +11459,8 @@ body.freeze {
   padding: 45px 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #3b3b3b;
+  /* background-color: #3b3b3b; */
+  background-color: #212529;
 }
 
 .eos-widget.pattern-style {
@@ -13324,6 +13325,16 @@ input::-ms-clear {
     Segoe UI Symbol;
 }
 
+.research-area-page {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* height: 335px; */
+  font-family: Myriad Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+}
+
 .research-area__img img {
   width: 100%;
   height: 100%;
@@ -13332,7 +13343,34 @@ input::-ms-clear {
   transition: all 0.3s ease;
 }
 
+.research-area-page img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
 .research-area__img .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  z-index: 2;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.research-area-page .title {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -13370,7 +13408,34 @@ input::-ms-clear {
   line-height: 25px;
 }
 
+.research-area-page .description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #014240; /* Cor verde sólida */
+  color: white;
+  padding: 25px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 3;
+  font-size: 2rem;
+  line-height: 120%;
+}
+
 .research-area__img a {
+  display: block;
+  /* height: 100%; */
+  height: 450px;
+  width: 100%;
+  position: relative;
+}
+
+.research-area-page a {
   display: block;
   /* height: 100%; */
   height: 450px;
@@ -13382,11 +13447,23 @@ input::-ms-clear {
   opacity: 0; /* Esconde o título no hover */
 }
 
+.research-area-page a:hover .title {
+  opacity: 0; /* Esconde o título no hover */
+}
+
 .research-area__img a:hover .description {
   opacity: 1; /* Mostra a descrição no hover */
 }
 
+.research-area-page a:hover .description {
+  opacity: 1; /* Mostra a descrição no hover */
+}
+
 .research-area__img a:hover img {
+  transform: scale(1.05); /* Um leve zoom na imagem */
+}
+
+.research-area-page a:hover img {
   transform: scale(1.05); /* Um leve zoom na imagem */
 }
 
@@ -13948,7 +14025,8 @@ input::-ms-clear {
 }
 
 .research-detail .content-page__body-right.no-bg {
-  background: #3b3b3b;
+  /* background: #3b3b3b; */
+  background: #212529;
 }
 
 .research-detail .content-page__body-right .h2,
@@ -15143,7 +15221,8 @@ main .sfContentBlock h6 {
 
   .listing-card--style3 .img {
     width: auto;
-    height: 0;
+    /* height: 0; */
+    height: 450px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
