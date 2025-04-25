@@ -13994,6 +13994,11 @@ input::-ms-clear {
   text-decoration: none;
 }
 
+.research-detail .research-detail__sidebar a:hover {
+  color: #ffff66;
+  text-decoration: none;
+}
+
 .research-detail .research-detail__sidebar {
   display: none;
   /* background-color: #171717; */
@@ -14004,9 +14009,9 @@ input::-ms-clear {
   font-family: Myriad Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol;
-  font-size: 18px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 120%;
   color: #fff;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -14294,8 +14299,10 @@ input::-ms-clear {
   }
 
   .research-detail .research-detail__sidebar {
-    width: 277px;
-    left: calc(50vw - 555px);
+    /* width: 277px; */
+    /* left: calc(50vw - 555px); */
+    width: 370px;
+    left: calc(50vw - 740px);
   }
 }
 
@@ -15927,9 +15934,16 @@ main .sfContentBlock h6 {
   line-height: 120%;
 }
 
+.banner-description p {
+  font-size: 1.4rem;
+  line-height: 120%;
+  color: #fff;
+}
+
 .descriptions-big {
   font-size: 2rem;
   line-height: 120%;
+  color: #fff;
 }
 
 .descriptions-biografy-big {
@@ -15945,6 +15959,11 @@ main .sfContentBlock h6 {
 a.readmore,
 .bottons-big {
   font-size: 1.5rem;
+  line-height: 120%;
+}
+
+.listing-content--style1 .listing-content__item .bottons-big {
+  font-size: 2rem;
   line-height: 120%;
 }
 
