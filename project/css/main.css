@@ -12724,11 +12724,17 @@ input::-ms-clear {
   bottom: 20px;
   left: calc(50% - 20px);
   color: #fff;
-  font-size: 32px;
+  font-size: 50px;
   text-align: center;
   cursor: pointer;
   z-index: 2;
 }
+
+/* .homepage-card-banner span:hover {
+  background-color: #014240;
+  border-radius: 50%;
+  border: 1px solid #fff;
+} */
 
 .banner-landing {
   position: relative;
