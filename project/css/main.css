@@ -5148,16 +5148,22 @@ template {
 
   .col-lg-8 {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 66.66667%;
+    /* -ms-flex: 0 0 66.66667%;
     flex: 0 0 66.66667%;
-    max-width: 66.66667%;
+    max-width: 66.66667%; */
+    -ms-flex: 0 0 95.66667%;
+    flex: 0 0 95.66667%;
+    max-width: 95.66667%;
   }
 
   .col-lg-9 {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 75%;
+    /* -ms-flex: 0 0 75%;
     flex: 0 0 75%;
-    max-width: 75%;
+    max-width: 75%; */
+    -ms-flex: 0 0 95%;
+    flex: 0 0 95%;
+    max-width: 95%;
   }
 
   .col-lg-10 {
@@ -14629,7 +14635,7 @@ main .sfContentBlock h6 {
 }
 
 .search-result-item .text {
-  color: #bcbcbc;
+  color: #fff;
 }
 
 .search-result-item .text:empty {
@@ -14637,9 +14643,9 @@ main .sfContentBlock h6 {
 }
 
 .search-result-item .addition-text {
-  color: #bcbcbc;
-  font-size: 10px;
-  line-height: 14px;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 120%;
   font-style: italic;
   padding-top: 15px;
 }
@@ -15378,6 +15384,7 @@ main .sfContentBlock h6 {
 
 .publication-detail-page {
   color: #bcbcbc;
+  margin-top: 90px;
 }
 
 .publication-detail-page h1,
@@ -15462,8 +15469,16 @@ main .sfContentBlock h6 {
   margin: 0;
 }
 
+.publication-detail-page .block-text {
+  padding-top: 30px;
+}
+
 .publication-detail-page .block-info {
-  padding-top: 60px;
+  padding-top: 40px;
+}
+
+.publication-detail-page .block-info .bottons-big {
+  font-size: 1.8rem;
 }
 
 .publication-detail-page .block-info .list-1 > div {
@@ -16025,4 +16040,9 @@ a.readmore,
 
 .research-area__img .antropogenic-text {
   font-size: 2.5rem;
+}
+
+
+.margin-top-publication {
+  margin-top: 100px;
 }
