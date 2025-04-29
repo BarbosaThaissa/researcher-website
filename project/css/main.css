@@ -5148,9 +5148,12 @@ template {
 
   .col-lg-8 {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 66.66667%;
+    /* -ms-flex: 0 0 66.66667%;
     flex: 0 0 66.66667%;
-    max-width: 66.66667%;
+    max-width: 66.66667%; */
+    -ms-flex: 0 0 95.66667%;
+    flex: 0 0 95.66667%;
+    max-width: 95.66667%;
   }
 
   .col-lg-9 {
@@ -14629,7 +14632,7 @@ main .sfContentBlock h6 {
 }
 
 .search-result-item .text {
-  color: #bcbcbc;
+  color: #fff;
 }
 
 .search-result-item .text:empty {
@@ -14637,9 +14640,9 @@ main .sfContentBlock h6 {
 }
 
 .search-result-item .addition-text {
-  color: #bcbcbc;
-  font-size: 10px;
-  line-height: 14px;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 120%;
   font-style: italic;
   padding-top: 15px;
 }
