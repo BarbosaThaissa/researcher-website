@@ -5158,9 +5158,12 @@ template {
 
   .col-lg-9 {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 75%;
+    /* -ms-flex: 0 0 75%;
     flex: 0 0 75%;
-    max-width: 75%;
+    max-width: 75%; */
+    -ms-flex: 0 0 95%;
+    flex: 0 0 95%;
+    max-width: 95%;
   }
 
   .col-lg-10 {
@@ -15381,6 +15384,7 @@ main .sfContentBlock h6 {
 
 .publication-detail-page {
   color: #bcbcbc;
+  margin-top: 90px;
 }
 
 .publication-detail-page h1,
@@ -15465,8 +15469,16 @@ main .sfContentBlock h6 {
   margin: 0;
 }
 
+.publication-detail-page .block-text {
+  padding-top: 30px;
+}
+
 .publication-detail-page .block-info {
-  padding-top: 60px;
+  padding-top: 40px;
+}
+
+.publication-detail-page .block-info .bottons-big {
+  font-size: 1.8rem;
 }
 
 .publication-detail-page .block-info .list-1 > div {
