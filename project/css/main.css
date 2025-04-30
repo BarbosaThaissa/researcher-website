@@ -13555,6 +13555,15 @@ input::-ms-clear {
   font-weight: 400;
 }
 
+.blog-detail .subtitle-big,
+.blog-detail .subtitle-big {
+  font-size: 2.3rem;
+}
+
+.blog-img {
+  width: 100%;
+}
+
 .blog-detail__body {
   color: #bcbcbc;
   margin-bottom: 45px;
@@ -15232,7 +15241,7 @@ main .sfContentBlock h6 {
     /* Nao tem no original */
     width: 350px;
   }
-  
+
   .listing-card--style3 .card-item .blog-desc {
     width: 370px;
   }
@@ -16054,4 +16063,8 @@ a.readmore,
 
 .margin-top-publication {
   margin-top: 100px;
+}
+
+.blog-author {
+  color: #ffff66 !important;
 }
