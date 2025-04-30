@@ -13550,6 +13550,11 @@ input::-ms-clear {
   margin-bottom: 15px;
 }
 
+.map-model-title {
+  color: #ffff66;
+  margin-bottom: 15px;
+}
+
 .blog-detail__author,
 .blog-detail__date {
   font-weight: 400;
@@ -13564,7 +13569,17 @@ input::-ms-clear {
   width: 100%;
 }
 
+.map-model-img {
+  width: 80%;
+}
+
 .blog-detail__body {
+  color: #bcbcbc;
+  margin-bottom: 45px;
+  padding-top: 15px;
+}
+
+.map-model-body {
   color: #bcbcbc;
   margin-bottom: 45px;
   padding-top: 15px;
@@ -13574,10 +13589,8 @@ input::-ms-clear {
   margin-bottom: 20px;
 }
 
-.blog-detail__body iframe {
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
+.map-model-body p {
+  margin-bottom: 20px;
 }
 
 .blog-detail .eos-widget__classification {
@@ -13639,6 +13652,10 @@ input::-ms-clear {
 @media screen and (min-width: 768px) {
   .blog-detail .eos-widget__classification,
   .blog-detail__body {
+    margin-bottom: 60px;
+  }
+  
+  .map-model-body {
     margin-bottom: 60px;
   }
 }
@@ -14424,40 +14441,6 @@ input::-ms-clear {
   left: 0;
   -o-object-fit: contain;
   object-fit: contain;
-}
-
-.blog-detail__body > iframe.video-frame,
-.blog-detail__body > iframe[src*="vimeo"],
-.blog-detail__body > iframe[src*="youku"],
-.blog-detail__body > iframe[src*="youtube"],
-.blog-detail__body > video,
-.sfContentBlock > iframe.video-frame,
-.sfContentBlock > iframe[src*="vimeo"],
-.sfContentBlock > iframe[src*="youku"],
-.sfContentBlock > iframe[src*="youtube"],
-.sfContentBlock > video {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
-}
-
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  width: 100%;
-}
-
-.video-wrapper iframe.video-frame,
-.video-wrapper iframe[src*="vimeo"],
-.video-wrapper iframe[src*="youku"],
-.video-wrapper iframe[src*="youtube"],
-.video-wrapper video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 @media screen and (min-width: 992px) {
