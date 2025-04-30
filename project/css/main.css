@@ -13555,6 +13555,15 @@ input::-ms-clear {
   font-weight: 400;
 }
 
+.blog-detail .subtitle-big,
+.blog-detail .subtitle-big {
+  font-size: 2.3rem;
+}
+
+.blog-img {
+  width: 100%;
+}
+
 .blog-detail__body {
   color: #bcbcbc;
   margin-bottom: 45px;
@@ -14835,10 +14844,11 @@ main .sfContentBlock h6 {
   font-family: Myriad Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol;
-  font-size: 10px;
+  font-size: 1.3rem;
+  line-height: 120%;
   font-style: italic;
   margin-bottom: 10px;
-  color: #bcbcbc;
+  color: #fff;
 }
 
 .listing-card--style2 .card-item .desc .date span,
@@ -15232,6 +15242,10 @@ main .sfContentBlock h6 {
     width: 350px;
   }
 
+  .listing-card--style3 .card-item .blog-desc {
+    width: 370px;
+  }
+
   .listing-card--style3 .img {
     width: auto;
     /* height: 0; */
@@ -15240,6 +15254,11 @@ main .sfContentBlock h6 {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     padding-bottom: 56.285%;
+  }
+
+  .listing-card--style3 .blog-img {
+    /* height: 0; */
+    height: 250px;
   }
 
   .listing-card--style3 .img img {
@@ -16042,7 +16061,10 @@ a.readmore,
   font-size: 2.5rem;
 }
 
-
 .margin-top-publication {
   margin-top: 100px;
+}
+
+.blog-author {
+  color: #ffff66 !important;
 }
