@@ -4336,6 +4336,7 @@ template {
 .col-xl-10,
 .col-xl-11,
 .col-xl-12,
+.col-12-research,
 .col-xl-auto {
   position: relative;
   width: 100%;
@@ -4461,6 +4462,14 @@ template {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
+}
+
+.col-12-research {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 25px;
 }
 
 .order-first {
@@ -5143,6 +5152,7 @@ template {
     -ms-flex: 0 0 33.33333%;
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
+    height: 680px;
   }
 
   .col-lg-4_representative-acievements {
@@ -13370,6 +13380,7 @@ input::-ms-clear {
   position: relative;
   overflow: hidden;
   width: 100%;
+  height: 100%;
   /* height: 335px; */
   font-family: Myriad Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
@@ -13427,8 +13438,13 @@ input::-ms-clear {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  font-size: 5rem;
   font-weight: 600;
+}
+
+.banner-research {
+  height: 300px;
 }
 
 .research-area__img .description {
@@ -13466,7 +13482,8 @@ input::-ms-clear {
   opacity: 0;
   transition: all 0.3s ease;
   z-index: 3;
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: 2.5rem;
   line-height: 120%;
 }
 
@@ -13480,8 +13497,8 @@ input::-ms-clear {
 
 .research-area-page a {
   display: block;
-  /* height: 100%; */
-  height: 450px;
+  height: 100%;
+  /* height: 450px; */
   width: 100%;
   position: relative;
 }
@@ -14800,9 +14817,6 @@ main .sfContentBlock h6 {
 }
 
 .research-area .card-item {
-  /* max-width: 400px; */
-  /* margin: 0 auto 30px; */
-  /* width: 270px; */
   height: 100%;
 }
 
@@ -16155,4 +16169,12 @@ a.readmore,
 .lado-direito p {
   padding-left: 40px;
   padding-right: 30px;
+}
+
+.list-card--research {
+  width: 33%;
+}
+
+.research-padding {
+  padding: 20px 0;
 }
