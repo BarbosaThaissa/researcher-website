@@ -4202,6 +4202,10 @@ template {
     max-width: 1200px;
   }
 
+  .container-research-area {
+    max-width: 1600px;
+  }
+
   .container-gallery {
     max-width: 1500px;
   }
@@ -4332,6 +4336,7 @@ template {
 .col-xl-10,
 .col-xl-11,
 .col-xl-12,
+.col-12-research,
 .col-xl-auto {
   position: relative;
   width: 100%;
@@ -4457,6 +4462,14 @@ template {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
+}
+
+.col-12-research {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 25px;
 }
 
 .order-first {
@@ -4591,6 +4604,14 @@ template {
 
 .offset-11 {
   margin-left: 91.66667%;
+}
+
+.col-lg-3-footer {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 @media (min-width: 576px) {
@@ -5110,7 +5131,18 @@ template {
   .col-lg-3 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 25%;
-    flex: 0 0 37%;
+    /* flex: 0 0 37%; */
+    flex: 1;
+    /* max-width: 25%; */
+    width: 460px;
+    height: 680px;
+  }
+
+  .col-lg-3-footer {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    /* flex: 0 0 37%; */
+    flex: 1;
     max-width: 25%;
     width: 460px;
   }
@@ -5120,6 +5152,7 @@ template {
     -ms-flex: 0 0 33.33333%;
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
+    height: 680px;
   }
 
   .col-lg-4_representative-acievements {
@@ -11640,6 +11673,12 @@ body.freeze {
   .eos-widget {
     padding: 60px 0;
   }
+
+  .home-research {
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
 }
 
 .form-control,
@@ -13330,6 +13369,7 @@ input::-ms-clear {
   position: relative;
   overflow: hidden;
   width: 100%;
+  height: 100%;
   /* height: 335px; */
   font-family: Myriad Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
@@ -13340,6 +13380,7 @@ input::-ms-clear {
   position: relative;
   overflow: hidden;
   width: 100%;
+  height: 100%;
   /* height: 335px; */
   font-family: Myriad Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
@@ -13377,7 +13418,8 @@ input::-ms-clear {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  font-size: 5rem;
   font-weight: 600;
 }
 
@@ -13396,8 +13438,17 @@ input::-ms-clear {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  font-size: 5rem;
   font-weight: 600;
+}
+
+.banner-research {
+  height: 300px;
+}
+
+.banner-research-solo {
+ height: 900px;
 }
 
 .research-area__img .description {
@@ -13415,8 +13466,9 @@ input::-ms-clear {
   opacity: 0;
   transition: all 0.3s ease;
   z-index: 3;
-  font-size: 1.8rem;
-  line-height: 25px;
+  /* font-size: 1.8rem; */
+  font-size: 2.5rem;
+  line-height: 120%;
 }
 
 .research-area-page .description {
@@ -13434,22 +13486,23 @@ input::-ms-clear {
   opacity: 0;
   transition: all 0.3s ease;
   z-index: 3;
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: 2.5rem;
   line-height: 120%;
 }
 
 .research-area__img a {
   display: block;
-  /* height: 100%; */
-  height: 450px;
+  height: 100%;
+  /* height: 450px; */
   width: 100%;
   position: relative;
 }
 
 .research-area-page a {
   display: block;
-  /* height: 100%; */
-  height: 450px;
+  height: 100%;
+  /* height: 450px; */
   width: 100%;
   position: relative;
 }
@@ -13507,7 +13560,8 @@ input::-ms-clear {
 
 .research-area__view-all {
   text-align: center;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  margin-top: 20px;
 }
 
 .research-area__view-all .bottons-big {
@@ -14761,17 +14815,23 @@ main .sfContentBlock h6 {
 }
 
 .listing-card--style1 .card-item {
-  max-width: 300px;
-  margin: 0 auto 30px;
-  width: 270px;
+  /* max-width: 400px; */
+  /* margin: 0 auto 30px; */
+  /* width: 270px; */
+}
+
+.research-area .card-item {
+  height: 100%;
 }
 
 .listing-card--style1 .img {
-  height: 0;
-  padding-bottom: 56.285%;
-  max-height: 224px;
+  object-fit: cover;
+  /* padding-bottom: 56.285%; */
+  padding-bottom: 1rem;
   border-radius: 6px;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .listing-card--style1 .desc {
@@ -15166,12 +15226,13 @@ main .sfContentBlock h6 {
 
 @media screen and (min-width: 992px) {
   .listing-card--style1 .img {
-    max-width: 285px;
+    /* max-width: 285px; */
     /* max-height: 335px; */
     /* padding: 0 0 131.3725%; */
-    padding: 0 0 153.3725%;
+    /* padding: 0 0 153.3725%; */
     border-radius: 6px;
-    width: 280px;
+    /* width: 280px; */
+    height: 100%;
   }
 
   .listing-card--style1 .desc {
@@ -16112,4 +16173,16 @@ a.readmore,
 .lado-direito p {
   padding-left: 40px;
   padding-right: 30px;
+}
+
+.list-card--research {
+  width: 33%;
+}
+
+.research-padding {
+  padding: 20px 0;
+}
+
+.research-background {
+  background-color: #014240;
 }
