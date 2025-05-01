@@ -13447,6 +13447,10 @@ input::-ms-clear {
   height: 300px;
 }
 
+.banner-research-solo {
+ height: 900px;
+}
+
 .research-area__img .description {
   position: absolute;
   top: 0;
@@ -16177,4 +16181,8 @@ a.readmore,
 
 .research-padding {
   padding: 20px 0;
+}
+
+.research-background {
+  background-color: #014240;
 }
