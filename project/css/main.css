@@ -13448,7 +13448,7 @@ input::-ms-clear {
 }
 
 .banner-research-solo {
- height: 900px;
+  height: 900px;
 }
 
 .research-area__img .description {
@@ -16167,6 +16167,7 @@ a.readmore,
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
 }
 
 .lado-direito h1,
@@ -16184,5 +16185,9 @@ a.readmore,
 }
 
 .research-background {
+  background-color: #014240;
+}
+
+.maps-fundo-verde {
   background-color: #014240;
 }
