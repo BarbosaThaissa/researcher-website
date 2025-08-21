@@ -1,6 +1,6 @@
 const sheetId = "1OENja_SQbOmIxHXnE0xvk640pxst5FJPrf7pzvdJVpc";
 const sheetName = "Maps";
-const container = document.querySelector(".maps-list");
+const container = document.querySelector(".container-maps");
 
 async function fetchMapsData() {
   const url = `https://opensheet.elk.sh/${sheetId}/${sheetName}`;
@@ -16,50 +16,31 @@ async function fetchMapsData() {
 function renderMaps(data) {
   container.innerHTML = "";
 
-  data.forEach((item, index) => {
+  data.forEach((item) => {
     const content = document.createElement("div");
-    content.classList.add("eos-widget", "blog-detail");
-
-    // Adiciona a classe verde nos ímpares
-    if (index % 2 !== 0) {
-      content.classList.add("maps-fundo-verde");
-    }
+    content.classList.add("content-meta");
 
     content.innerHTML = `
-      <div class="container">
-        <h2 class="map-model-title title-big">${item.Title}</h2>
-
-        <div class="map-model-body">
-          <div class="descriptions-big">
-            <p>
-              <img
-                alt="${item.Title}"
-                src="${item.Image}"
-                class="map-model-img"
-              />
-              <br />
-            </p>
-          </div>
-          <div class="block-info">
-            <a class="readmore bottons-big" title="Read Morel" href="${item.Link}" target="_blank">
-              download map
-            </a>
-          </div>
+      <div class="image-capa lado-esquerdo">
+        <img alt="${item.Title}" src="${item.Image}" />
+      </div>
+      <div class="lado-direito">
+        <h1 class="title-big">${item.Title}</h1>
+        <div>
+          <p class="descriptions-big">
+            ${item.Description}
+          </p>
+        </div>
+        <div class="block-info">
+          <a class="readmore bottons-big" title="Download Map" href="${item.Image}" target="_blank">
+            download map
+          </a>
         </div>
       </div>
     `;
 
     container.appendChild(content);
   });
-
-  // bindDownloadButtons();
 }
 
 fetchMapsData();
-
-// Para fazer download funcionar, descomente a linha abaixo
-//<a class="readmore bottons-big" title="download map">
-//             <button data-url="${item.Image}">
-//             download map
-//         </button>
-//     </a>

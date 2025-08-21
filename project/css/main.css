@@ -4210,6 +4210,10 @@ template {
     max-width: 1500px;
   }
 
+  .container-maps {
+    max-width: 1500px;
+  }
+
   .header-container {
     max-width: 1700px;
   }
@@ -16187,7 +16191,8 @@ a.readmore,
 }
 
 .lado-direito h1,
-.lado-direito p {
+.lado-direito p,
+.lado-direito .block-info {
   padding-left: 40px;
   padding-right: 30px;
 }
