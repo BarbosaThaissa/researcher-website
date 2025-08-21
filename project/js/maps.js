@@ -32,7 +32,7 @@ function renderMaps(data) {
           </p>
         </div>
         <div class="block-info">
-          <a class="readmore bottons-big" title="Download Map" href="${item.Image}" target="_blank">
+          <a class="readmore bottons-big" title="Download Map" href="${item.Image}" download target="_blank">
             download map
           </a>
         </div>
