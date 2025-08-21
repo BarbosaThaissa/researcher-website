@@ -10641,6 +10641,10 @@ a:hover {
   color: #fff;
 }
 
+a.desative-hover:hover {
+  color: #ffff66;
+}
+
 a.alt:hover {
   /* color: #e2a856; */
   color: #ffff66;
