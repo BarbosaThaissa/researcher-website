@@ -544,7 +544,6 @@ html {
 }
 
 a {
-  /* color: #e2a856; */
   color: #ffff66;
 }
 
@@ -563,13 +562,11 @@ a.desative-hover:hover {
 }
 
 a.alt:hover {
-  /* color: #e2a856; */
   color: #ffff66;
 }
 
 a.readmore {
   text-transform: uppercase;
-  /* border-bottom: 1px solid #e2a856; */
   border-bottom: 1px solid #ffff66;
   font-family: Myriad Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
@@ -587,34 +584,6 @@ img {
   max-width: 100%;
 }
 
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(1turn);
-    transform: rotate(1turn);
-  }
-}
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(1turn);
-    transform: rotate(1turn);
-  }
-}
-
-.full-width {
-  width: 100%;
-}
-
 ol,
 ul {
   margin: 0;
@@ -627,23 +596,6 @@ ul li {
   word-break: break-word;
 }
 
-.italic {
-  font-style: italic;
-}
-
-.ico.ico__key {
-  display: none !important;
-}
-
-.fade {
-  -webkit-transition: opacity 0.2s linear;
-  transition: opacity 0.2s linear;
-}
-
-.fade:not(.show) {
-  opacity: 0;
-}
-
 .menu-opened {
   overflow: hidden;
 }
@@ -654,7 +606,6 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  /* background-color: #171717; */
   background-color: #014240;
 }
 
@@ -662,16 +613,8 @@ header {
   background-color: transparent;
 }
 
-.scrolled header {
-  -webkit-transition: background-color 0.1s ease-in;
-  transition: background-color 0.1s ease-in;
-  /* background-color: #171717; */
-  background-color: #014240;
-}
-
 header .site-logo {
   height: 50px;
-  /* display: block; */
   font-weight: 700;
   color: white;
   display: flex;
@@ -854,7 +797,6 @@ header .hamburger-menu.open span:nth-child(3) span:last-child {
 }
 
 .menu-opened header {
-  /* background-color: #171717; */
   background-color: #014240;
 }
 
@@ -866,7 +808,6 @@ header .hamburger-menu.open span:nth-child(3) span:last-child {
   margin: 0;
   top: 70px;
   position: fixed;
-  /* background: #171717; */
   background-color: #014240;
 }
 
@@ -947,7 +888,6 @@ header .hamburger-menu.open span:nth-child(3) span:last-child {
 
 .header__navigation .nav-main__first--li.open,
 .header__navigation .nav-main__first--li.open > a {
-  /* color: #e2a856; */
   color: #ffff66;
 }
 
@@ -1070,7 +1010,6 @@ header .hamburger-menu.open span:nth-child(3) span:last-child {
   }
 
   .header__navigation a:hover {
-    /* color: #e2a856; */
     color: #ffff66;
   }
 
@@ -1090,9 +1029,7 @@ header .hamburger-menu.open span:nth-child(3) span:last-child {
 
   .header__navigation .nav-main .btn-gift {
     background: none;
-    /* border: 1px solid #e2a856; */
     border: 1px solid #ffff66;
-    /* color: #e2a856; */
     color: #ffff66;
     border-radius: 30px;
     padding: 11px 20px;
@@ -1100,7 +1037,6 @@ header .hamburger-menu.open span:nth-child(3) span:last-child {
   }
 
   .header__navigation .nav-main .btn-gift:hover {
-    /* background: #e2a856; */
     background: #ffff66;
     border: 1px solid #fff;
     color: #fff;
@@ -1201,7 +1137,6 @@ header .hamburger-menu.open span:nth-child(3) span:last-child {
     left: 0;
     right: 0;
     height: 80px;
-    /* background: #171717; */
     background-color: #014240;
   }
 }
@@ -1254,24 +1189,11 @@ h4 {
 
 body {
   position: relative;
-  /* background-color: #171717; */
   background-color: #014240;
-}
-
-body.no-scroll {
-  overflow: hidden;
 }
 
 body .heading {
   margin-bottom: 25px;
-}
-
-body .sub-heading {
-  margin-bottom: 15px;
-}
-
-body.freeze {
-  overflow: hidden;
 }
 
 .heading {
@@ -1287,35 +1209,7 @@ body.freeze {
   padding: 45px 0;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-color: #3b3b3b; */
   background-color: #212529;
-}
-
-.eos-widget.pattern-style {
-  position: relative;
-}
-
-.eos-widget.pattern-style:before {
-  content: "";
-  display: block;
-  pointer-events: none;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.eos-widget.pattern-style .container,
-.eos-widget.pattern-style .container-fluid {
-  position: relative;
-  z-index: 2;
-}
-
-.eos-widget.pattern-style__1:before {
-  background: rgba(0, 0, 0, 0.85);
 }
 
 .eos-widget,
