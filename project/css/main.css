@@ -458,236 +458,6 @@ svg {
   outline: 0;
 }
 
-.btn.disabled,
-.btn:disabled {
-  opacity: 0.65;
-}
-
-.btn:not(:disabled):not(.disabled) {
-  cursor: pointer;
-}
-
-a.btn.disabled {
-  pointer-events: none;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-.btn-primary:hover {
-  color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
-}
-
-.btn-primary.disabled,
-.btn-primary:disabled {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-.btn-lg {
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  border-radius: 0.3rem;
-}
-
-.btn-sm {
-  padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  border-radius: 0.2rem;
-}
-
-.border {
-  border: 1px solid #dee2e6 !important;
-}
-
-.border-top {
-  border-top: 1px solid #dee2e6 !important;
-}
-
-.border-right {
-  border-right: 1px solid #dee2e6 !important;
-}
-
-.border-bottom {
-  border-bottom: 1px solid #dee2e6 !important;
-}
-
-.border-left {
-  border-left: 1px solid #dee2e6 !important;
-}
-
-.border-0 {
-  border: 0 !important;
-}
-
-.border-top-0 {
-  border-top: 0 !important;
-}
-
-.border-right-0 {
-  border-right: 0 !important;
-}
-
-.border-bottom-0 {
-  border-bottom: 0 !important;
-}
-
-.border-left-0 {
-  border-left: 0 !important;
-}
-
-.border-primary {
-  border-color: #007bff !important;
-}
-
-.border-secondary {
-  border-color: #6c757d !important;
-}
-
-.border-success {
-  border-color: #28a745 !important;
-}
-
-.border-info {
-  border-color: #17a2b8 !important;
-}
-
-.border-warning {
-  border-color: #ffc107 !important;
-}
-
-.border-danger {
-  border-color: #dc3545 !important;
-}
-
-.border-light {
-  border-color: #f8f9fa !important;
-}
-
-.border-dark {
-  border-color: #343a40 !important;
-}
-
-.border-white {
-  border-color: #fff !important;
-}
-
-.rounded {
-  border-radius: 0.25rem !important;
-}
-
-.rounded-top {
-  border-top-left-radius: 0.25rem !important;
-}
-
-.rounded-right,
-.rounded-top {
-  border-top-right-radius: 0.25rem !important;
-}
-
-.rounded-bottom,
-.rounded-right {
-  border-bottom-right-radius: 0.25rem !important;
-}
-
-.rounded-bottom,
-.rounded-left {
-  border-bottom-left-radius: 0.25rem !important;
-}
-
-.rounded-left {
-  border-top-left-radius: 0.25rem !important;
-}
-
-.rounded-circle {
-  border-radius: 50% !important;
-}
-
-.rounded-0 {
-  border-radius: 0 !important;
-}
-
-.clearfix:after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
-.embed-responsive {
-  position: relative;
-  display: block;
-  width: 100%;
-  padding: 0;
-  overflow: hidden;
-}
-
-.embed-responsive:before {
-  display: block;
-  content: "";
-}
-
-.embed-responsive .embed-responsive-item,
-.embed-responsive embed,
-.embed-responsive iframe,
-.embed-responsive object,
-.embed-responsive video {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-.embed-responsive-21by9:before {
-  padding-top: 42.85714%;
-}
-
-.embed-responsive-16by9:before {
-  padding-top: 56.25%;
-}
-
-.embed-responsive-4by3:before {
-  padding-top: 75%;
-}
-
-.embed-responsive-1by1:before {
-  padding-top: 100%;
-}
-
-.fixed-top {
-  top: 0;
-}
-
-.fixed-bottom,
-.fixed-top {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-.fixed-bottom {
-  bottom: 0;
-}
-
-@supports (position: sticky) {
-  .sticky-top {
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-  }
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -2102,11 +1872,6 @@ body.freeze {
   color: #fff;
 }
 
-.btn-default.disabled,
-.btn-default:disabled {
-  opacity: 0.6;
-}
-
 .btn {
   font-weight: 700;
   font-family: Myriad Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -2119,16 +1884,10 @@ body.freeze {
   box-shadow: none;
 }
 
-.btn.btn.disabled {
-  opacity: 0.6;
-}
-
 .btn.btn-primary {
-  /* background: none; */
+  color: #fff;
   background-color: #014240;
-  /* border: 1px solid #ffff66; */
   border: 1px solid #014240;
-  /* color: #ffff66; */
   border-radius: 22px;
   padding: 11px 20px;
   text-transform: uppercase;
@@ -2975,33 +2734,6 @@ footer .footer__nav a {
   z-index: 10;
 }
 
-[data-bls-jump].sticky {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 70px;
-  z-index: 10;
-}
-
-@media screen and (min-width: 992px) {
-  [data-bls-jump] {
-    -webkit-transition: top 0.2s ease-in;
-    transition: top 0.2s ease-in;
-  }
-
-  [data-bls-jump].sticky {
-    right: auto;
-    left: calc(50vw - 465px);
-    top: 140px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  [data-bls-jump].sticky {
-    left: calc(50vw - 555px);
-  }
-}
-
 .eos-widget .search-form .search-filter .search-filter-fill {
   background-color: #2e2e2e;
   border-radius: 20px;
@@ -3643,55 +3375,6 @@ footer .footer__nav a {
     margin-bottom: 0;
     font-size: 14px;
     line-height: 20px;
-  }
-
-  .publication-detail-page .download-row {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    margin-bottom: 20px;
-  }
-
-  .publication-detail-page .download-row,
-  .publication-detail-page .download-row .rounded-circle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .publication-detail-page .download-row .rounded-circle {
-    background: #ffff66;
-    border: 1px solid #fff;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 48px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #fff;
-    margin-right: 10px;
-  }
-
-  .publication-detail-page .download-row .rounded-circle:hover {
-    text-decoration: none;
-    background: #fff;
-    border-color: #ffff66;
-    color: #ffff66;
-  }
-
-  .publication-detail-page .download-row .rounded-circle .fa {
-    font-size: 24px;
-    line-height: 0;
-  }
-
-  .publication-detail-page .download-row a {
-    color: #fff;
-    font-weight: 700;
   }
 
   .publication-detail-page .block-text {
