@@ -3937,12 +3937,12 @@ a:hover {
   text-decoration: underline;
 }
 
-a:not([href]):not([tabindex]),
+/* a:not([href]):not([tabindex]),
 a:not([href]):not([tabindex]):focus,
 a:not([href]):not([tabindex]):hover {
   color: inherit;
   text-decoration: none;
-}
+} */
 
 a:not([href]):not([tabindex]):focus {
   outline: 0;
@@ -4006,10 +4006,10 @@ button {
   border-radius: 0;
 }
 
-button:focus {
+/* button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
-}
+} */
 
 button,
 input,
@@ -4207,6 +4207,10 @@ template {
   }
 
   .container-gallery {
+    max-width: 1500px;
+  }
+
+  .container-maps {
     max-width: 1500px;
   }
 
@@ -10637,6 +10641,10 @@ a:hover {
   color: #fff;
 }
 
+a.desative-hover:hover {
+  color: #ffff66;
+}
+
 a.alt:hover {
   /* color: #e2a856; */
   color: #ffff66;
@@ -10654,6 +10662,22 @@ a.readmore {
 }
 
 a.readmore:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+button.readmore {
+  text-transform: uppercase;
+  /* border-bottom: 1px solid #e2a856; */
+  border-bottom: 1px solid #ffff66;
+  font-family: Myriad Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+button.readmore:hover {
   color: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -13448,7 +13472,7 @@ input::-ms-clear {
 }
 
 .banner-research-solo {
- height: 900px;
+  height: 900px;
 }
 
 .research-area__img .description {
@@ -16167,10 +16191,12 @@ a.readmore,
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
 }
 
 .lado-direito h1,
-.lado-direito p {
+.lado-direito p,
+.lado-direito .block-info {
   padding-left: 40px;
   padding-right: 30px;
 }
@@ -16184,5 +16210,9 @@ a.readmore,
 }
 
 .research-background {
+  background-color: #014240;
+}
+
+.maps-fundo-verde {
   background-color: #014240;
 }
