@@ -30,7 +30,7 @@ function renderResearch(data) {
                 ${item.Title}
               </div>
               <div class="description">
-                 ${item.Description}
+                 ${item.Summary}
               </div>
             </a>
           </div>
