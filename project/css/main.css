@@ -830,7 +830,6 @@ header .hamburger-menu.open span:nth-child(3) span:last-child {
 }
 
 .header__navigation.bls-dropdown__menu li.active > a {
-  /* color: #e2a856; */
   color: #ffff66;
 }
 
@@ -2411,7 +2410,6 @@ footer .footer__nav a {
     -ms-flex: 0 0 25%;
     flex: 0 0 37%;
     max-width: none;
-    /* width: 600px; */
     width: 795px;
   }
 
@@ -2425,10 +2423,6 @@ footer .footer__nav a {
 
   .margin-top-publication {
     margin-top: 100px;
-  }
-
-  .blog-author {
-    color: #ffff66 !important;
   }
 
   .content-meta {
@@ -2447,7 +2441,6 @@ footer .footer__nav a {
   }
 
   .image-capa {
-    /* width: 40%; */
     margin: 0 2rem 0 0;
   }
 
@@ -2500,9 +2493,5 @@ footer .footer__nav a {
 }
 
 .research-background {
-  background-color: #014240;
-}
-
-.maps-fundo-verde {
   background-color: #014240;
 }
