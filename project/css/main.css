@@ -2495,3 +2495,15 @@ footer .footer__nav a {
 .research-background {
   background-color: #014240;
 }
+
+.methodology-section {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.methodology-img {
+  height: auto;
+  border-radius: 8px;
+}
