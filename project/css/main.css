@@ -2085,6 +2085,12 @@ footer .footer__nav a {
   margin-bottom: 35px;
 }
 
+@media (max-width: 1024px) {
+  .listing-content--style1 .listing-content__item {
+    margin-bottom: 0;
+  }
+}
+
 .listing-content--style1 .listing-content__item .h4,
 .listing-content--style1 .listing-content__item h3 {
   color: #fff;
@@ -2092,7 +2098,6 @@ footer .footer__nav a {
 }
 
 .listing-content--style1 .listing-content__item .description {
-  display: none;
   padding-bottom: 15px;
 }
 
