@@ -1704,6 +1704,22 @@ footer .footer__nav a {
   font-weight: 600;
 }
 
+@media (max-width: 1024px) {
+  .research-area-page .title {
+    font-size: 3rem;
+    line-height: normal;
+  }
+
+  .research-area-page img {
+    height: 400px;
+  }
+
+  .research-area-page .description {
+    font-size: 1.6rem;
+    padding: 15px;
+  }
+}
+
 .banner-research {
   height: 300px;
 }
