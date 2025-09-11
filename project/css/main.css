@@ -1197,6 +1197,13 @@ body .heading {
   color: #990000;
 }
 
+@media (max-width: 766px) {
+  .load-book-chapters .heading,
+  .load-papers .heading {
+    padding: 0 15px;
+  }
+}
+
 .welcome-text {
   padding: 20px;
 }
@@ -1860,7 +1867,6 @@ footer .footer__nav a {
 
 .search-result-item .addition-text {
   color: #fff;
-  font-size: 1.5rem;
   line-height: 120%;
   font-style: italic;
   padding-top: 15px;
@@ -2376,6 +2382,10 @@ footer .footer__nav a {
     font-size: 2rem;
     line-height: 120%;
     color: #fff;
+  }
+
+  .search-result-item .addition-text {
+    font-size: 1.5rem;
   }
 
   .descriptions-biografy-big {
