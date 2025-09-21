@@ -2130,6 +2130,13 @@ footer .footer__nav a {
   text-decoration: underline;
 }
 
+.content-meta {
+  border-radius: 6px;
+  background-color: #014240;
+  padding: 15px;
+  margin-bottom: 3rem;
+}
+
 @media screen and (min-width: 768px) {
   .listing-content--style1 .listing-content__item .h4,
   .listing-content--style1 .listing-content__item h3 {
@@ -2474,10 +2481,19 @@ footer .footer__nav a {
 
   .content-meta {
     display: flex;
-    border-radius: 6px;
-    background-color: #014240;
-    padding: 10px;
-    margin-bottom: 3rem;
+  }
+
+  .lado-esquerdo,
+  .lado-direito {
+    flex: 1; /* Isto faz cada elemento ocupar o mesmo espaço */
+    width: 50%; /* Explicitamente define 50% para cada lado */
+  }
+
+  .lado-direito h1,
+  .lado-direito p,
+  .lado-direito .block-info {
+    padding-left: 20px;
+    /* padding-right: 30px; */
   }
 
   @media (max-width: 899px) {
@@ -2511,24 +2527,11 @@ footer .footer__nav a {
   }
 }
 
-.lado-esquerdo,
-.lado-direito {
-  flex: 1; /* Isto faz cada elemento ocupar o mesmo espaço */
-  width: 50%; /* Explicitamente define 50% para cada lado */
-}
-
 .lado-direito {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-}
-
-.lado-direito h1,
-.lado-direito p,
-.lado-direito .block-info {
-  padding-left: 40px;
-  padding-right: 30px;
 }
 
 .list-card--research {
