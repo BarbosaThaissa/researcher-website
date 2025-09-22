@@ -1708,30 +1708,6 @@ footer .footer__nav a {
   font-weight: 600;
 }
 
-@media (max-width: 1024px) {
-  .research-area-page .title {
-    font-size: 3rem;
-    line-height: normal;
-  }
-
-  .research-area-page img {
-    height: 400px;
-  }
-
-  .research-area-page .description {
-    font-size: 1.6rem;
-    padding: 15px;
-  }
-}
-
-.banner-research {
-  height: 300px;
-}
-
-.banner-research-solo {
-  height: 900px;
-}
-
 .research-area__img .description {
   position: absolute;
   top: 0;
@@ -1762,6 +1738,35 @@ footer .footer__nav a {
   z-index: 3;
   font-size: 2.5rem;
   line-height: 120%;
+}
+
+@media (max-width: 1024px) {
+  .research-area__img .title,
+  .research-area-page .title {
+    font-size: 3rem;
+    line-height: normal;
+  }
+
+  .research-area__img .description,
+  .research-area-page .description {
+    font-size: 1.6rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .research-area__img img,
+  .research-area-page img {
+    height: 400px;
+  }
+}
+
+.banner-research {
+  height: 300px;
+}
+
+.banner-research-solo {
+  height: 900px;
 }
 
 .research-area__img a {
@@ -1835,7 +1840,7 @@ footer .footer__nav a {
 }
 
 @media screen and (max-width: 991px) {
-  .research-area__item {
+  .margin-bottom-30px {
     margin-bottom: 30px;
   }
 }
@@ -2149,7 +2154,14 @@ footer .footer__nav a {
   }
 }
 
-/* @media screen and (min-width: 992px) { */
+@media screen and (min-width: 992px) {
+  .descriptions-big {
+    font-size: 2rem;
+    line-height: 120%;
+    color: #fff;
+  }
+}
+
 @media screen and (min-width: 1045px) {
   .col-lg-3-footer {
     -webkit-box-flex: 0;
@@ -2392,12 +2404,6 @@ footer .footer__nav a {
   .banner-landing .banner-title {
     font-size: 3.5rem;
     line-height: 120%;
-  }
-
-  .descriptions-big {
-    font-size: 2rem;
-    line-height: 120%;
-    color: #fff;
   }
 
   .search-result-item .addition-text {
