@@ -2532,6 +2532,13 @@ footer .footer__nav a {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.lado-direito .descriptions-big,
+.lado-direito .bottons-big {
+  font-size: 1.3rem;
 }
 
 .list-card--research {
