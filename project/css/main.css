@@ -2451,12 +2451,6 @@ footer .footer__nav a {
     line-height: 120% !important;
   }
 
-  .follow-me-links {
-    width: 50px;
-    height: 50px;
-    border-radius: 30px;
-  }
-
   .follow-me-links-footer {
     width: 24px;
     height: 24px;
@@ -2529,6 +2523,12 @@ footer .footer__nav a {
       margin: 0 auto 2rem;
     }
   }
+}
+
+.follow-me-links {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
 }
 
 .publication-detail-page {
