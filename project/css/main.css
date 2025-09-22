@@ -376,14 +376,6 @@ svg {
     height: 680px;
   }
 
-  .col-lg-3-footer {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 25%;
-    flex: 1;
-    max-width: 25%;
-    width: 460px;
-  }
-
   .col-lg-4 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33.33333%;
@@ -635,6 +627,12 @@ header .site-logo {
   flex-direction: column;
 }
 
+@media (max-width: 1024px) {
+  .logo-texts-align {
+    align-items: center;
+  }
+}
+
 .title-logo {
   font-size: 1.8rem;
   line-height: 120%;
@@ -679,6 +677,16 @@ header .site-logo {
   font-size: 1.1rem;
   line-height: 120%;
   font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .title-logo-footer {
+    font-size: 1.2rem;
+  }
+
+  .subtitle-logo-footer {
+    font-size: 1rem;
+  }
 }
 
 .logo-site-divider-footer {
@@ -1181,6 +1189,13 @@ body .heading {
   color: #990000;
 }
 
+@media (max-width: 766px) {
+  .load-book-chapters .heading,
+  .load-papers .heading {
+    padding: 0 15px;
+  }
+}
+
 .welcome-text {
   padding: 20px;
 }
@@ -1254,7 +1269,7 @@ footer .footer__top {
 }
 
 footer .footer__bottom {
-  background: #000;
+  /* background: #000; */
   margin: 0 -15px;
   border-top: 2px solid #a9302e;
   position: relative;
@@ -1283,7 +1298,7 @@ footer .footer__bottom:after {
 footer .footer__bottom--content {
   text-align: center;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 14px;
 }
 
@@ -1439,6 +1454,11 @@ footer .footer__nav a {
   text-align: center;
   cursor: pointer;
   z-index: 2;
+}
+
+.welcomo-container p {
+  font-size: 2rem;
+  line-height: 120%;
 }
 
 .banner-landing {
@@ -1688,14 +1708,6 @@ footer .footer__nav a {
   font-weight: 600;
 }
 
-.banner-research {
-  height: 300px;
-}
-
-.banner-research-solo {
-  height: 900px;
-}
-
 .research-area__img .description {
   position: absolute;
   top: 0;
@@ -1726,6 +1738,35 @@ footer .footer__nav a {
   z-index: 3;
   font-size: 2.5rem;
   line-height: 120%;
+}
+
+@media (max-width: 1024px) {
+  .research-area__img .title,
+  .research-area-page .title {
+    font-size: 3rem;
+    line-height: normal;
+  }
+
+  .research-area__img .description,
+  .research-area-page .description {
+    font-size: 1.6rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .research-area__img img,
+  .research-area-page img {
+    height: 400px;
+  }
+}
+
+.banner-research {
+  height: 300px;
+}
+
+.banner-research-solo {
+  height: 900px;
 }
 
 .research-area__img a {
@@ -1767,7 +1808,7 @@ footer .footer__nav a {
 }
 
 .height-img img {
-  height: 100px;
+  /* height: 100px; */
 }
 
 .research-area__desc {
@@ -1799,7 +1840,7 @@ footer .footer__nav a {
 }
 
 @media screen and (max-width: 991px) {
-  .research-area__item {
+  .margin-bottom-30px {
     margin-bottom: 30px;
   }
 }
@@ -1828,7 +1869,6 @@ footer .footer__nav a {
 
 .search-result-item .addition-text {
   color: #fff;
-  font-size: 1.5rem;
   line-height: 120%;
   font-style: italic;
   padding-top: 15px;
@@ -1993,13 +2033,13 @@ footer .footer__nav a {
 }
 
 .listing-card--style4 .img {
-  height: 0;
+  /* height: 0; */
   border-top-left-radius: 6px;
   border-bottom-left-radius: 0;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 0;
   overflow: hidden;
-  padding-bottom: 56.285%;
+  /* padding-bottom: 56.285%; */
 }
 
 .listing-card--style4 .img img {
@@ -2027,13 +2067,15 @@ footer .footer__nav a {
 }
 
 .listing-card--style4 .desc .title-big {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   line-height: 120%;
 }
 
 .listing-card--style4 .desc .description {
   color: #fff;
   text-decoration: none;
+  font-size: 1.3rem;
+  line-height: 120%;
 }
 
 .listing-card--style4 .desc .text {
@@ -2053,6 +2095,18 @@ footer .footer__nav a {
   margin-bottom: 35px;
 }
 
+@media (max-width: 1024px) {
+  .listing-content--style1 .listing-content__item {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1044px) {
+  .listing-card--style4 .desc .title-big {
+    font-size: 3.5rem;
+  }
+}
+
 .listing-content--style1 .listing-content__item .h4,
 .listing-content--style1 .listing-content__item h3 {
   color: #fff;
@@ -2060,7 +2114,6 @@ footer .footer__nav a {
 }
 
 .listing-content--style1 .listing-content__item .description {
-  display: none;
   padding-bottom: 15px;
 }
 
@@ -2087,6 +2140,13 @@ footer .footer__nav a {
   text-decoration: underline;
 }
 
+.content-meta {
+  border-radius: 6px;
+  background-color: #014240;
+  padding: 15px;
+  margin-bottom: 3rem;
+}
+
 @media screen and (min-width: 768px) {
   .listing-content--style1 .listing-content__item .h4,
   .listing-content--style1 .listing-content__item h3 {
@@ -2095,6 +2155,22 @@ footer .footer__nav a {
 }
 
 @media screen and (min-width: 992px) {
+  .descriptions-big {
+    font-size: 2rem;
+    line-height: 120%;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 1045px) {
+  .col-lg-3-footer {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 1;
+    max-width: 25%;
+    width: 460px;
+  }
+
   .listing-card--style1 .img {
     border-radius: 6px;
     height: 100%;
@@ -2260,11 +2336,6 @@ footer .footer__nav a {
     display: block;
   }
 
-  .publication-detail-page {
-    color: #bcbcbc;
-    margin-top: 90px;
-  }
-
   .publication-detail-page h1,
   .publication-detail-page h2,
   .publication-detail-page h3,
@@ -2335,10 +2406,8 @@ footer .footer__nav a {
     line-height: 120%;
   }
 
-  .descriptions-big {
-    font-size: 2rem;
-    line-height: 120%;
-    color: #fff;
+  .search-result-item .addition-text {
+    font-size: 1.5rem;
   }
 
   .descriptions-biografy-big {
@@ -2393,12 +2462,6 @@ footer .footer__nav a {
     line-height: 120% !important;
   }
 
-  .follow-me-links {
-    width: 50px;
-    height: 50px;
-    border-radius: 30px;
-  }
-
   .follow-me-links-footer {
     width: 24px;
     height: 24px;
@@ -2427,10 +2490,19 @@ footer .footer__nav a {
 
   .content-meta {
     display: flex;
-    border-radius: 6px;
-    background-color: #014240;
-    padding: 10px;
-    margin-bottom: 3rem;
+  }
+
+  .lado-esquerdo,
+  .lado-direito {
+    flex: 1; /* Isto faz cada elemento ocupar o mesmo espaço */
+    width: 50%; /* Explicitamente define 50% para cada lado */
+  }
+
+  .lado-direito h1,
+  .lado-direito p,
+  .lado-direito .block-info {
+    padding-left: 20px;
+    /* padding-right: 30px; */
   }
 
   @media (max-width: 899px) {
@@ -2464,10 +2536,15 @@ footer .footer__nav a {
   }
 }
 
-.lado-esquerdo,
-.lado-direito {
-  flex: 1; /* Isto faz cada elemento ocupar o mesmo espaço */
-  width: 50%; /* Explicitamente define 50% para cada lado */
+.follow-me-links {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.publication-detail-page {
+  color: #fff;
+  margin-top: 80px;
 }
 
 .lado-direito {
@@ -2475,13 +2552,13 @@ footer .footer__nav a {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.lado-direito h1,
-.lado-direito p,
-.lado-direito .block-info {
-  padding-left: 40px;
-  padding-right: 30px;
+.lado-direito .descriptions-big,
+.lado-direito .bottons-big {
+  font-size: 1.3rem;
 }
 
 .list-card--research {
@@ -2506,4 +2583,10 @@ footer .footer__nav a {
 .methodology-img {
   height: auto;
   border-radius: 8px;
+}
+
+.footer-align-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
