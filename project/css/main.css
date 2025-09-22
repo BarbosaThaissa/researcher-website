@@ -1806,7 +1806,7 @@ footer .footer__nav a {
 }
 
 .height-img img {
-  height: 100px;
+  /* height: 100px; */
 }
 
 .research-area__desc {
@@ -2031,13 +2031,13 @@ footer .footer__nav a {
 }
 
 .listing-card--style4 .img {
-  height: 0;
+  /* height: 0; */
   border-top-left-radius: 6px;
   border-bottom-left-radius: 0;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 0;
   overflow: hidden;
-  padding-bottom: 56.285%;
+  /* padding-bottom: 56.285%; */
 }
 
 .listing-card--style4 .img img {
@@ -2065,13 +2065,15 @@ footer .footer__nav a {
 }
 
 .listing-card--style4 .desc .title-big {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   line-height: 120%;
 }
 
 .listing-card--style4 .desc .description {
   color: #fff;
   text-decoration: none;
+  font-size: 1.3rem;
+  line-height: 120%;
 }
 
 .listing-card--style4 .desc .text {
@@ -2094,6 +2096,12 @@ footer .footer__nav a {
 @media (max-width: 1024px) {
   .listing-content--style1 .listing-content__item {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1044px) {
+  .listing-card--style4 .desc .title-big {
+    font-size: 3.5rem;
   }
 }
 
@@ -2144,7 +2152,8 @@ footer .footer__nav a {
   }
 }
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) { */
+@media screen and (min-width: 1045px) {
   .listing-card--style1 .img {
     border-radius: 6px;
     height: 100%;
@@ -2308,11 +2317,6 @@ footer .footer__nav a {
 
   .listing-content--style1 .listing-content__item .description {
     display: block;
-  }
-
-  .publication-detail-page {
-    color: #bcbcbc;
-    margin-top: 90px;
   }
 
   .publication-detail-page h1,
@@ -2525,6 +2529,11 @@ footer .footer__nav a {
       margin: 0 auto 2rem;
     }
   }
+}
+
+.publication-detail-page {
+  color: #fff;
+  margin-top: 80px;
 }
 
 .lado-direito {
