@@ -919,7 +919,8 @@ header .hamburger-menu.open span:nth-child(3) span:last-child {
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol;
   font-weight: 700;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 11px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
@@ -1665,6 +1666,7 @@ footer .footer__nav a {
 
 .contact-me-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -2219,6 +2221,33 @@ footer .footer__nav a {
   }
 }
 
+@media screen and (min-width: 1320px) {
+  .header__navigation .nav-main a {
+    font-size: 1.3rem;
+    line-height: 120%;
+  }
+}
+
+@media screen and (max-width: 1319px) {
+  .subtitle-logo {
+    font-size: 1.1rem;
+  }
+
+  .title-logo {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1319px) {
+  .header-right-bg {
+    width: 51%;
+  }
+
+  .header-left-bg {
+    width: 49%;
+  }
+}
+
 @media screen and (min-width: 1045px) {
   .col-lg-3-footer {
     -webkit-box-flex: 0;
@@ -2446,11 +2475,6 @@ footer .footer__nav a {
       flex: 0 0 26.66%;
       width: 26.66%;
     }
-  }
-
-  .header__navigation .nav-main a {
-    font-size: 1.3rem;
-    line-height: 120%;
   }
 
   .title-big {
