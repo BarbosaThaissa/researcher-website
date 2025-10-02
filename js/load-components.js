@@ -15,8 +15,6 @@ async function includeHTML(id, file) {
 
 // Carrega o header e footer quando a página é carregada
 document.addEventListener("DOMContentLoaded", () => {
-  includeHTML("header", "./components/header.html");
-  includeHTML("footer", "./components/footer.html");
-  includeHTML("header", "../components/header.html");
-  includeHTML("footer", "../components/footer.html");
+  includeHTML("header", "/components/header.html");
+  includeHTML("footer", "/components/footer.html");
 });
