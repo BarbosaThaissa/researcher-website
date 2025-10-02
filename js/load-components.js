@@ -20,6 +20,7 @@ function initMobileMenu() {
     menuToggle.addEventListener("click", (e) => {
       e.preventDefault();
       menuWrapper.classList.toggle("open");
+      menuToggle.classList.toggle("open");
     });
   }
 }
