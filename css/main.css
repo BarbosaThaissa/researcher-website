@@ -201,17 +201,17 @@ svg {
 }
 /* Para colocar cor de fundo do header */
 
-.logo-imagem {
+.logo-image {
   overflow: hidden; /* Impede que o conteúdo ultrapasse os limites do container */
-  max-width: 100%; /* Ou qualquer largura específica */
+  flex-shrink: 0; /* garante que a imagem não encolha */
 }
 
 .logo-image-perfil {
-  max-width: 100%;
   width: 60px;
-  border-radius: 30px;
-  object-fit: contain;
-  overflow: hidden;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* object-fit: contain; */
 }
 
 .header-top,
@@ -606,12 +606,21 @@ header {
 }
 
 header .site-logo {
-  height: 50px;
+  /* height: 50px; */
+  /* height: 50px;
   font-weight: 700;
   color: white;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 20px; */
+
+  height: auto;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
 }
 
 .logo-site-info {
@@ -625,6 +634,44 @@ header .site-logo {
 .logo-texts-align {
   display: flex;
   flex-direction: column;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 500px) {
+  .title-logo.logo-name {
+    font-size: 1.2rem;
+  }
+
+  .subtitle-logo {
+    font-size: 0.9rem;
+  }
+
+  .header-left-bg {
+    width: 80%;
+  }
+
+  .header-right-bg {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .logo-texts-align {
+    align-items: center;
+  }
+
+  .logo-image-perfil {
+    width: 70px;
+    height: 70px;
+  }
+
+  .header-left-bg {
+    width: 85%;
+  }
+
+  .header-right-bg {
+    width: 15%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -651,6 +698,21 @@ header .site-logo {
   line-height: 120%;
   color: #000;
   font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .subtitle-logo {
+    display: none;
+  }
+
+  .logo-site-divider {
+    display: none;
+  }
+
+  .logo-site-info {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 
 .logo-site-divider {
@@ -857,7 +919,8 @@ header .hamburger-menu.open span:nth-child(3) span:last-child {
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol;
   font-weight: 700;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 11px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
@@ -949,11 +1012,6 @@ header .hamburger-menu.open span:nth-child(3) span:last-child {
 @media screen and (min-width: 992px) {
   .home-page.menu-opened header {
     background-color: transparent;
-  }
-
-  header .site-logo {
-    height: 60px;
-    min-width: 156px;
   }
 
   header .hamburger-menu {
@@ -1608,7 +1666,8 @@ footer .footer__nav a {
 
 .contact-me-section {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: baseline;
   justify-content: center;
   gap: 10px;
 }
@@ -1625,6 +1684,12 @@ footer .footer__nav a {
 
 .contact-me-section a:hover {
   color: #ffff66;
+}
+
+.contact-me-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -2162,6 +2227,33 @@ footer .footer__nav a {
   }
 }
 
+@media screen and (min-width: 1320px) {
+  .header__navigation .nav-main a {
+    font-size: 1.3rem;
+    line-height: 120%;
+  }
+}
+
+@media screen and (max-width: 1319px) {
+  .subtitle-logo {
+    font-size: 1.1rem;
+  }
+
+  .title-logo {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1319px) {
+  .header-right-bg {
+    width: 51%;
+  }
+
+  .header-left-bg {
+    width: 49%;
+  }
+}
+
 @media screen and (min-width: 1045px) {
   .col-lg-3-footer {
     -webkit-box-flex: 0;
@@ -2320,7 +2412,8 @@ footer .footer__nav a {
     align-items: center;
     -ms-flex-line-pack: center;
     align-content: center;
-    padding: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
     width: calc(90% - 25px);
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -2389,11 +2482,6 @@ footer .footer__nav a {
       flex: 0 0 26.66%;
       width: 26.66%;
     }
-  }
-
-  .header__navigation .nav-main a {
-    font-size: 1.3rem;
-    line-height: 120%;
   }
 
   .title-big {
