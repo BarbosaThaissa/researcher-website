@@ -19,11 +19,6 @@ async function loadMethodology() {
         <div class="container">
           <h2 class="title-big">${section.SectionTitle}</h2>
           <div class="methodology-section">
-            <img 
-              src="${section.Image}" 
-              alt="${section.SectionTitle}" 
-              class="methodology-img"
-            />
             <ul class="descriptions-big">
               ${section.Tools.split(";")
                 .map((tool) => `<li>${tool.trim()}</li>`)
