@@ -694,7 +694,7 @@ header .site-logo {
 }
 
 .subtitle-logo {
-  font-size: 1.5rem;
+  font-size: 1.47rem;
   line-height: 120%;
   color: #000;
   font-weight: 500;
@@ -736,7 +736,7 @@ header .site-logo {
 
 .subtitle-logo-footer {
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.06rem;
   line-height: 120%;
   font-weight: 500;
 }
@@ -747,7 +747,7 @@ header .site-logo {
   }
 
   .subtitle-logo-footer {
-    font-size: 1rem;
+    font-size: 0.98rem;
   }
 }
 
@@ -2236,7 +2236,7 @@ footer .footer__nav a {
 
 @media screen and (max-width: 1319px) {
   .subtitle-logo {
-    font-size: 1.1rem;
+    font-size: 1.08rem;
   }
 
   .title-logo {
