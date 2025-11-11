@@ -1499,6 +1499,12 @@ footer .footer__nav a {
   }
 }
 
+@media screen and (min-width: 2560px) {
+  .homepage-card-banner-container {
+    padding-bottom: 900px;
+  }
+}
+
 .homepage-card-banner-text .banner-title {
   margin-bottom: 0;
 }
@@ -2154,6 +2160,12 @@ footer .footer__nav a {
   line-height: 120%;
 }
 
+@media screen and (max-width: 600px) {
+  .listing-card--style4 .desc .title-academic {
+    font-size: 1.7rem;
+  }
+}
+
 .listing-card--style4 .desc .description {
   color: #fff;
   text-decoration: none;
@@ -2417,6 +2429,11 @@ footer .footer__nav a {
     -o-object-fit: cover;
     object-fit: cover;
     min-height: 100%;
+  }
+
+  .listing-card--style4 .img-contain img {
+    object-fit: contain;
+    height: -webkit-fill-available;
   }
 
   .listing-card--style4 .desc {
@@ -2695,4 +2712,22 @@ footer .footer__nav a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.listing-card--style4 .academic-experience {
+  background-color: transparent;
+  padding-bottom: 0px;
+}
+
+.cug-logo {
+  background-color: #fff;
+}
+
+.ntu-logo {
+  background-color: #fcfeff;
+  padding: 20px;
+}
+
+.fus-logo {
+  background-color: #040067;
 }
